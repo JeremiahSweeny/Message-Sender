@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Messenger</title>
+</head>
+<body>
+<h1>Submit Your Message</h1>
+<form method="POST" action="https://pphs-forms-intro.herokuapp.com/messages">
+<!--
+name: "Samuel"
+email: "samuel.clouse@pphs.purdue.edu"
+message: "Hello"
+--> 
+<label for="name" >Name: </label>
+<input type="text" name="name" required>
+<label for="email"> Email: </label>
+<input type="email" name="email" required>
+<label for="message"> Message: </label>
+<textarea placeholder="Enter your message..." name="message" required></textarea>
+<button type="submit">Don't click this</button>
+</form>
+</body>
+</html>
